@@ -114,6 +114,7 @@ export EDITOR='nvim'
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias n="nvim ."
+alias k="kubectl "
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -133,3 +134,10 @@ wd() {
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH="/usr/local/opt/qt/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/cumbreras/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cumbreras/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/cumbreras/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cumbreras/google-cloud-sdk/completion.zsh.inc'; fi
