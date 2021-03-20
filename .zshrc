@@ -96,7 +96,10 @@ export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+function set_arm_arch_flag() {
+  export ARCHFLAGS='-arch arm64'
+}
+
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
