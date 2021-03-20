@@ -1,4 +1,4 @@
-### Dotfiles macOS
+### Dotfiles macOS ARM64 Arch
 
 - iterm2
 - tmux + tmuxinator
